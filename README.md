@@ -9,7 +9,7 @@ This uses different namespace, then `tymondesigns/jwt-auth`, but overall, provid
    > **Info** An error will appear because the package is still in use, ignore it.
 2) Replace all the occurrences of `Tymon\JWTAuth` with `bisual\JWTAuth`.
    > **Tip**: You can use *Find and Replace* feature of your IDE. Try it with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
-3) Run `composer require php-open-source-saver/jwt-auth`
+3) Run `composer require bisual/jwt-auth`
 
 ### Notes
 
@@ -26,7 +26,7 @@ Full documentation is available at [laravel-jwt-auth.readthedocs.io](https://lar
 
 ## Security
 
-If you want to disclose a security related issue, please follow our [security policy](https://github.com/PHP-Open-Source-Saver/jwt-auth/security/policy)
+If you want to disclose a security related issue, please follow our [security policy](https://github.com/bisual/jwt-auth/security/policy)
 
 ## License
 
