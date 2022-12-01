@@ -10,24 +10,24 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test;
+namespace bisual\JWTAuth\Test;
 
 use BadMethodCallException;
 use Mockery;
 use Mockery\LegacyMockInterface;
-use PHPOpenSourceSaver\JWTAuth\Claims\Audience;
-use PHPOpenSourceSaver\JWTAuth\Claims\Claim;
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Claims\Expiration;
-use PHPOpenSourceSaver\JWTAuth\Claims\IssuedAt;
-use PHPOpenSourceSaver\JWTAuth\Claims\Issuer;
-use PHPOpenSourceSaver\JWTAuth\Claims\JwtId;
-use PHPOpenSourceSaver\JWTAuth\Claims\NotBefore;
-use PHPOpenSourceSaver\JWTAuth\Claims\Subject;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\InvalidClaimException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\PayloadException;
-use PHPOpenSourceSaver\JWTAuth\Payload;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Claims\Audience;
+use bisual\JWTAuth\Claims\Claim;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Claims\Expiration;
+use bisual\JWTAuth\Claims\IssuedAt;
+use bisual\JWTAuth\Claims\Issuer;
+use bisual\JWTAuth\Claims\JwtId;
+use bisual\JWTAuth\Claims\NotBefore;
+use bisual\JWTAuth\Claims\Subject;
+use bisual\JWTAuth\Exceptions\InvalidClaimException;
+use bisual\JWTAuth\Exceptions\PayloadException;
+use bisual\JWTAuth\Payload;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 class PayloadTest extends AbstractTestCase
 {

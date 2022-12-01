@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Stubs;
+namespace bisual\JWTAuth\Test\Stubs;
 
-use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
+use bisual\JWTAuth\Contracts\JWTSubject;
 
 class UserStub implements JWTSubject
 {

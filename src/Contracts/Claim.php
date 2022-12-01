@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Contracts;
+namespace bisual\JWTAuth\Contracts;
 
-use PHPOpenSourceSaver\JWTAuth\Exceptions\InvalidClaimException;
+use bisual\JWTAuth\Exceptions\InvalidClaimException;
 
 interface Claim
 {

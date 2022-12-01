@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Providers\JWT;
+namespace bisual\JWTAuth\Providers\JWT;
 
 use Illuminate\Support\Arr;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\SecretMissingException;
+use bisual\JWTAuth\Exceptions\JWTException;
+use bisual\JWTAuth\Exceptions\SecretMissingException;
 
 abstract class Provider
 {

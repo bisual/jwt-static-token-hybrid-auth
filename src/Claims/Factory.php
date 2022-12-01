@@ -10,12 +10,12 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Claims;
+namespace bisual\JWTAuth\Claims;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\InvalidClaimException;
-use PHPOpenSourceSaver\JWTAuth\Support\Utils;
+use bisual\JWTAuth\Exceptions\InvalidClaimException;
+use bisual\JWTAuth\Support\Utils;
 
 class Factory
 {

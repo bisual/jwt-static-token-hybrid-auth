@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Claims;
+namespace bisual\JWTAuth\Test\Claims;
 
-use PHPOpenSourceSaver\JWTAuth\Claims\NotBefore;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\InvalidClaimException;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Claims\NotBefore;
+use bisual\JWTAuth\Exceptions\InvalidClaimException;
+use bisual\JWTAuth\Test\AbstractTestCase;
 
 class NotBeforeTest extends AbstractTestCase
 {

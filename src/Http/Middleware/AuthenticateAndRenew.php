@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Http\Middleware;
+namespace bisual\JWTAuth\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

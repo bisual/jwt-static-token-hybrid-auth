@@ -10,36 +10,36 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Providers;
+namespace bisual\JWTAuth\Test\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Laravel\Octane\Events\RequestReceived;
 use Laravel\Octane\Events\TaskReceived;
 use Laravel\Octane\Events\TickReceived;
 use Orchestra\Testbench\TestCase;
-use PHPOpenSourceSaver\JWTAuth\Blacklist;
-use PHPOpenSourceSaver\JWTAuth\Claims\Factory as ClaimFactory;
-use PHPOpenSourceSaver\JWTAuth\Console\JWTGenerateCertCommand;
-use PHPOpenSourceSaver\JWTAuth\Console\JWTGenerateSecretCommand;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Http\Parser;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Auth;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Storage;
-use PHPOpenSourceSaver\JWTAuth\Factory;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\Authenticate;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\AuthenticateAndRenew;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\Check;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\RefreshToken;
-use PHPOpenSourceSaver\JWTAuth\JWT;
-use PHPOpenSourceSaver\JWTAuth\JWTAuth;
-use PHPOpenSourceSaver\JWTAuth\JWTGuard;
-use PHPOpenSourceSaver\JWTAuth\Manager;
-use PHPOpenSourceSaver\JWTAuth\Providers\Auth\Illuminate;
-use PHPOpenSourceSaver\JWTAuth\Providers\JWT\Lcobucci;
-use PHPOpenSourceSaver\JWTAuth\Providers\JWT\Namshi;
-use PHPOpenSourceSaver\JWTAuth\Providers\JWT\Provider;
-use PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Blacklist;
+use bisual\JWTAuth\Claims\Factory as ClaimFactory;
+use bisual\JWTAuth\Console\JWTGenerateCertCommand;
+use bisual\JWTAuth\Console\JWTGenerateSecretCommand;
+use bisual\JWTAuth\Contracts\Http\Parser;
+use bisual\JWTAuth\Contracts\Providers\Auth;
+use bisual\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use bisual\JWTAuth\Contracts\Providers\Storage;
+use bisual\JWTAuth\Factory;
+use bisual\JWTAuth\Http\Middleware\Authenticate;
+use bisual\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use bisual\JWTAuth\Http\Middleware\Check;
+use bisual\JWTAuth\Http\Middleware\RefreshToken;
+use bisual\JWTAuth\JWT;
+use bisual\JWTAuth\JWTAuth;
+use bisual\JWTAuth\JWTGuard;
+use bisual\JWTAuth\Manager;
+use bisual\JWTAuth\Providers\Auth\Illuminate;
+use bisual\JWTAuth\Providers\JWT\Lcobucci;
+use bisual\JWTAuth\Providers\JWT\Namshi;
+use bisual\JWTAuth\Providers\JWT\Provider;
+use bisual\JWTAuth\Providers\LaravelServiceProvider;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 class LaravelServiceProviderTest extends TestCase
 {
@@ -156,7 +156,7 @@ class LaravelServiceProviderTest extends TestCase
         /** @var Storage $storageProvider */
         $storageProvider = $this->app->make('tymon.jwt.provider.storage');
         $this->assertInstanceOf(
-            \PHPOpenSourceSaver\JWTAuth\Providers\Storage\Illuminate::class,
+            \bisual\JWTAuth\Providers\Storage\Illuminate::class,
             $storageProvider,
         );
     }
@@ -178,12 +178,12 @@ class LaravelServiceProviderTest extends TestCase
     {
         $this->app->forgetInstance('tymon.jwt.parser');
 
-        /** @var \PHPOpenSourceSaver\JWTAuth\Http\Parser\Parser $parser */
+        /** @var \bisual\JWTAuth\Http\Parser\Parser $parser */
         $parser = $this->app->make('tymon.jwt.parser');
         $parsers = $parser->getChain();
 
         $this->assertInstanceOf(
-            \PHPOpenSourceSaver\JWTAuth\Http\Parser\Parser::class,
+            \bisual\JWTAuth\Http\Parser\Parser::class,
             $parser,
         );
         $this->assertCount(3, $parsers);

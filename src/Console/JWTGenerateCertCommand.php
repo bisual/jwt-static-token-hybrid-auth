@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Console;
+namespace bisual\JWTAuth\Console;
 
 use Illuminate\Console\Command;
 
@@ -22,12 +22,12 @@ class JWTGenerateCertCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'jwt:generate-certs 
-        {--force : Override certificates if existing} 
-        {--algo= : Algorithm (rsa/ec)} 
-        {--bits= : RSA-Key length (1024,2048,4096,8192} 
-        {--sha= : SHA-variant (1,224,256,384,512)} 
-        {--dir= : Directory where the certificates should be placed} 
+    protected $signature = 'jwt:generate-certs
+        {--force : Override certificates if existing}
+        {--algo= : Algorithm (rsa/ec)}
+        {--bits= : RSA-Key length (1024,2048,4096,8192}
+        {--sha= : SHA-variant (1,224,256,384,512)}
+        {--dir= : Directory where the certificates should be placed}
         {--curve= : EC-Curvename (e.g. secp384r1, prime256v1 )}
         {--passphrase= : Passphrase}
         {--ask-passphrase : Enter passphrase instead passing as argument}';

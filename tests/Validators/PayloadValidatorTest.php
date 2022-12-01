@@ -10,20 +10,20 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Validators;
+namespace bisual\JWTAuth\Test\Validators;
 
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Claims\Expiration;
-use PHPOpenSourceSaver\JWTAuth\Claims\IssuedAt;
-use PHPOpenSourceSaver\JWTAuth\Claims\Issuer;
-use PHPOpenSourceSaver\JWTAuth\Claims\JwtId;
-use PHPOpenSourceSaver\JWTAuth\Claims\NotBefore;
-use PHPOpenSourceSaver\JWTAuth\Claims\Subject;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\InvalidClaimException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenExpiredException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Claims\Expiration;
+use bisual\JWTAuth\Claims\IssuedAt;
+use bisual\JWTAuth\Claims\Issuer;
+use bisual\JWTAuth\Claims\JwtId;
+use bisual\JWTAuth\Claims\NotBefore;
+use bisual\JWTAuth\Claims\Subject;
+use bisual\JWTAuth\Exceptions\InvalidClaimException;
+use bisual\JWTAuth\Exceptions\TokenExpiredException;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 class PayloadValidatorTest extends AbstractTestCase
 {

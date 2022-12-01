@@ -10,15 +10,15 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Middleware;
+namespace bisual\JWTAuth\Test\Middleware;
 
 use Illuminate\Http\Response;
 use Mockery;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\Authenticate;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\AuthenticateAndRenew;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\Parser;
-use PHPOpenSourceSaver\JWTAuth\Test\Stubs\UserStub;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Http\Middleware\Authenticate;
+use bisual\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use bisual\JWTAuth\Http\Parser\Parser;
+use bisual\JWTAuth\Test\Stubs\UserStub;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class AuthenticateAndRenewTest extends AbstractMiddlewareTest

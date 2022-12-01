@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Claims;
+namespace bisual\JWTAuth\Claims;
 
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
 
 class NotBefore extends Claim
 {

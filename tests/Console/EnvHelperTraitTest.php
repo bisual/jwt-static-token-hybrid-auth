@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Console;
+namespace bisual\JWTAuth\Test\Console;
 
-use PHPOpenSourceSaver\JWTAuth\Console\EnvHelperTrait;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Console\EnvHelperTrait;
+use bisual\JWTAuth\Test\AbstractTestCase;
 
 class MockEnvHelperClass
 {

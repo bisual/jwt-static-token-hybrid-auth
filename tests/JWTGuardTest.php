@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test;
+namespace bisual\JWTAuth\Test;
 
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Auth\Events\Attempting;
@@ -22,13 +22,13 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Http\Request;
 use Mockery;
 use Mockery\LegacyMockInterface;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\UserNotDefinedException;
-use PHPOpenSourceSaver\JWTAuth\Factory;
-use PHPOpenSourceSaver\JWTAuth\JWT;
-use PHPOpenSourceSaver\JWTAuth\JWTGuard;
-use PHPOpenSourceSaver\JWTAuth\Payload;
-use PHPOpenSourceSaver\JWTAuth\Test\Stubs\LaravelUserStub;
+use bisual\JWTAuth\Exceptions\JWTException;
+use bisual\JWTAuth\Exceptions\UserNotDefinedException;
+use bisual\JWTAuth\Factory;
+use bisual\JWTAuth\JWT;
+use bisual\JWTAuth\JWTGuard;
+use bisual\JWTAuth\Payload;
+use bisual\JWTAuth\Test\Stubs\LaravelUserStub;
 
 class JWTGuardTest extends AbstractTestCase
 {
@@ -72,12 +72,12 @@ class JWTGuardTest extends AbstractTestCase
         $this->jwt->shouldReceive('check')->once()->with(true)->andReturn($payload);
         $this->jwt->shouldReceive('checkSubjectModel')
             ->once()
-            ->with('\PHPOpenSourceSaver\JWTAuth\Test\Stubs\LaravelUserStub')
+            ->with('\bisual\JWTAuth\Test\Stubs\LaravelUserStub')
             ->andReturn(true);
 
         $this->provider->shouldReceive('getModel')
             ->once()
-            ->andReturn('\PHPOpenSourceSaver\JWTAuth\Test\Stubs\LaravelUserStub');
+            ->andReturn('\bisual\JWTAuth\Test\Stubs\LaravelUserStub');
         $this->provider->shouldReceive('retrieveById')
             ->once()
             ->with(1)
@@ -104,12 +104,12 @@ class JWTGuardTest extends AbstractTestCase
         $this->jwt->shouldReceive('check')->once()->with(true)->andReturn($payload);
         $this->jwt->shouldReceive('checkSubjectModel')
             ->once()
-            ->with('\PHPOpenSourceSaver\JWTAuth\Test\Stubs\LaravelUserStub')
+            ->with('\bisual\JWTAuth\Test\Stubs\LaravelUserStub')
             ->andReturn(true);
 
         $this->provider->shouldReceive('getModel')
             ->once()
-            ->andReturn('\PHPOpenSourceSaver\JWTAuth\Test\Stubs\LaravelUserStub');
+            ->andReturn('\bisual\JWTAuth\Test\Stubs\LaravelUserStub');
         $this->provider->shouldReceive('retrieveById')
             ->once()
             ->with(1)

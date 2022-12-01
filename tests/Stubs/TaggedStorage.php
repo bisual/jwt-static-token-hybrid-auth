@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Stubs;
+namespace bisual\JWTAuth\Test\Stubs;
 
-use PHPOpenSourceSaver\JWTAuth\Providers\Storage\Illuminate as Storage;
+use bisual\JWTAuth\Providers\Storage\Illuminate as Storage;
 
 class TaggedStorage extends Storage
 {

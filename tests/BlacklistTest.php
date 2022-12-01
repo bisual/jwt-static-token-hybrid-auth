@@ -10,21 +10,21 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test;
+namespace bisual\JWTAuth\Test;
 
 use Mockery;
 use Mockery\LegacyMockInterface;
-use PHPOpenSourceSaver\JWTAuth\Blacklist;
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Claims\Expiration;
-use PHPOpenSourceSaver\JWTAuth\Claims\IssuedAt;
-use PHPOpenSourceSaver\JWTAuth\Claims\Issuer;
-use PHPOpenSourceSaver\JWTAuth\Claims\JwtId;
-use PHPOpenSourceSaver\JWTAuth\Claims\NotBefore;
-use PHPOpenSourceSaver\JWTAuth\Claims\Subject;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Storage;
-use PHPOpenSourceSaver\JWTAuth\Payload;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Blacklist;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Claims\Expiration;
+use bisual\JWTAuth\Claims\IssuedAt;
+use bisual\JWTAuth\Claims\Issuer;
+use bisual\JWTAuth\Claims\JwtId;
+use bisual\JWTAuth\Claims\NotBefore;
+use bisual\JWTAuth\Claims\Subject;
+use bisual\JWTAuth\Contracts\Providers\Storage;
+use bisual\JWTAuth\Payload;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 class BlacklistTest extends AbstractTestCase
 {

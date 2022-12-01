@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Http\Parser;
+namespace bisual\JWTAuth\Http\Parser;
 
 use Illuminate\Http\Request;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Http\Parser as ParserContract;
+use bisual\JWTAuth\Contracts\Http\Parser as ParserContract;
 
 class InputSource implements ParserContract
 {

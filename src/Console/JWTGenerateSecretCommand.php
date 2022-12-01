@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Console;
+namespace bisual\JWTAuth\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

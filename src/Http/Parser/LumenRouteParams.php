@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Http\Parser;
+namespace bisual\JWTAuth\Http\Parser;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

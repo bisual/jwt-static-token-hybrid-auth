@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth;
+namespace bisual\JWTAuth;
 
 use ArrayAccess;
 use BadMethodCallException;
@@ -20,10 +20,10 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use JsonSerializable;
-use PHPOpenSourceSaver\JWTAuth\Claims\Claim;
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\PayloadException;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Claims\Claim;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Exceptions\PayloadException;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerializable
 {
@@ -281,7 +281,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
     {
         if (preg_match('/get(.+)\b/i', $method, $matches)) {
             foreach ($this->claims as $claim) {
-                if (get_class($claim) === 'PHPOpenSourceSaver\\JWTAuth\\Claims\\'.$matches[1]) {
+                if (get_class($claim) === 'bisual\\JWTAuth\\Claims\\'.$matches[1]) {
                     return $claim->getValue();
                 }
             }

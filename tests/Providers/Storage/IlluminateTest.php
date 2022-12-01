@@ -10,14 +10,14 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Providers\Storage;
+namespace bisual\JWTAuth\Test\Providers\Storage;
 
 use Illuminate\Contracts\Cache\Repository;
 use Mockery;
 use Mockery\MockInterface;
-use PHPOpenSourceSaver\JWTAuth\Providers\Storage\Illuminate as Storage;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
-use PHPOpenSourceSaver\JWTAuth\Test\Stubs\TaggedStorage;
+use bisual\JWTAuth\Providers\Storage\Illuminate as Storage;
+use bisual\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Test\Stubs\TaggedStorage;
 
 class IlluminateTest extends AbstractTestCase
 {

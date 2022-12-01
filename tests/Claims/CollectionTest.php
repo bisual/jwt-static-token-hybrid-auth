@@ -10,16 +10,16 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Claims;
+namespace bisual\JWTAuth\Test\Claims;
 
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Claims\Expiration;
-use PHPOpenSourceSaver\JWTAuth\Claims\IssuedAt;
-use PHPOpenSourceSaver\JWTAuth\Claims\Issuer;
-use PHPOpenSourceSaver\JWTAuth\Claims\JwtId;
-use PHPOpenSourceSaver\JWTAuth\Claims\NotBefore;
-use PHPOpenSourceSaver\JWTAuth\Claims\Subject;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Claims\Expiration;
+use bisual\JWTAuth\Claims\IssuedAt;
+use bisual\JWTAuth\Claims\Issuer;
+use bisual\JWTAuth\Claims\JwtId;
+use bisual\JWTAuth\Claims\NotBefore;
+use bisual\JWTAuth\Claims\Subject;
+use bisual\JWTAuth\Test\AbstractTestCase;
 
 class CollectionTest extends AbstractTestCase
 {

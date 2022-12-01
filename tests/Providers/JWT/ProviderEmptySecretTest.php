@@ -10,11 +10,11 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Providers\JWT;
+namespace bisual\JWTAuth\Test\Providers\JWT;
 
-use PHPOpenSourceSaver\JWTAuth\Exceptions\SecretMissingException;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
-use PHPOpenSourceSaver\JWTAuth\Test\Stubs\JWTProviderStub;
+use bisual\JWTAuth\Exceptions\SecretMissingException;
+use bisual\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Test\Stubs\JWTProviderStub;
 
 class ProviderEmptySecretTest extends AbstractTestCase
 {

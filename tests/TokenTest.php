@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test;
+namespace bisual\JWTAuth\Test;
 
-use PHPOpenSourceSaver\JWTAuth\Token;
+use bisual\JWTAuth\Token;
 
 class TokenTest extends AbstractTestCase
 {

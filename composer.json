@@ -1,5 +1,5 @@
 {
-    "name": "php-open-source-saver/jwt-auth",
+    "name": "bisual/jwt-static-token-hybrid-auth",
     "description": "JSON Web Token Authentication for Laravel and Lumen",
     "keywords": [
         "auth",
@@ -8,28 +8,18 @@
         "jwt",
         "laravel"
     ],
-    "homepage": "https://github.com/PHP-Open-Source-Saver/jwt-auth",
+    "homepage": "https://github.com/bisual/jwt-static-token-hybrid-auth",
     "support": {
-        "issues": "https://github.com/PHP-Open-Source-Saver/jwt-auth/issues",
-        "source": "https://github.com/PHP-Open-Source-Saver/jwt-auth"
+        "issues": "https://github.com/bisual/jwt-static-token-hybrid-auth/issues",
+        "source": "https://github.com/bisual/jwt-static-token-hybrid-auth"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Sean Tymon",
-            "email": "tymon148@gmail.com",
-            "homepage": "https://tymon.xyz",
+            "name": "Sergio Cuadrado",
+            "email": "sergiocuadrado@bisual.net",
+            "homepage": "https://bisual.net",
             "role": "Forked package creator | Developer"
-        },
-        {
-            "name": "Eric Schricker",
-            "email": "eric.schricker@adiutabyte.de",
-            "role": "Developer"
-        },
-        {
-            "name": "Fabio William Conceição",
-            "email": "messhias@gmail.com",
-            "role": "Developer"
         }
     ],
     "require": {
@@ -57,12 +47,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PHPOpenSourceSaver\\JWTAuth\\": "src/"
+            "bisual\\JWTAuth\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PHPOpenSourceSaver\\JWTAuth\\Test\\": "tests/"
+            "bisual\\JWTAuth\\Test\\": "tests/"
         }
     },
     "extra": {
@@ -71,11 +61,11 @@
         },
         "laravel": {
             "aliases": {
-                "JWTAuth": "PHPOpenSourceSaver\\JWTAuth\\Facades\\JWTAuth",
-                "JWTFactory": "PHPOpenSourceSaver\\JWTAuth\\Facades\\JWTFactory"
+                "JWTAuth": "bisual\\JWTAuth\\Facades\\JWTAuth",
+                "JWTFactory": "bisual\\JWTAuth\\Facades\\JWTFactory"
             },
             "providers": [
-                "PHPOpenSourceSaver\\JWTAuth\\Providers\\LaravelServiceProvider"
+                "bisual\\JWTAuth\\Providers\\LaravelServiceProvider"
             ]
         }
     },

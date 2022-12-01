@@ -10,13 +10,13 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth;
+namespace bisual\JWTAuth;
 
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenBlacklistedException;
-use PHPOpenSourceSaver\JWTAuth\Support\CustomClaims;
-use PHPOpenSourceSaver\JWTAuth\Support\RefreshFlow;
+use bisual\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use bisual\JWTAuth\Exceptions\JWTException;
+use bisual\JWTAuth\Exceptions\TokenBlacklistedException;
+use bisual\JWTAuth\Support\CustomClaims;
+use bisual\JWTAuth\Support\RefreshFlow;
 
 class Manager
 {
@@ -94,7 +94,7 @@ class Manager
      *
      * @return Payload
      *
-     * @throws \PHPOpenSourceSaver\JWTAuth\Exceptions\TokenBlacklistedException
+     * @throws \bisual\JWTAuth\Exceptions\TokenBlacklistedException
      */
     public function decode(Token $token, $checkBlacklist = true)
     {

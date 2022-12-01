@@ -10,23 +10,23 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Test\Http;
+namespace bisual\JWTAuth\Test\Http;
 
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Crypt;
 use Mockery;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Http\Parser as ParserContract;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\AuthHeaders;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\Cookies;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\InputSource;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\LumenRouteParams;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\Parser;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\QueryString;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\RouteParams;
-use PHPOpenSourceSaver\JWTAuth\Test\AbstractTestCase;
+use bisual\JWTAuth\Contracts\Http\Parser as ParserContract;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Http\Parser\AuthHeaders;
+use bisual\JWTAuth\Http\Parser\Cookies;
+use bisual\JWTAuth\Http\Parser\InputSource;
+use bisual\JWTAuth\Http\Parser\LumenRouteParams;
+use bisual\JWTAuth\Http\Parser\Parser;
+use bisual\JWTAuth\Http\Parser\QueryString;
+use bisual\JWTAuth\Http\Parser\RouteParams;
+use bisual\JWTAuth\Test\AbstractTestCase;
 
 class ParserTest extends AbstractTestCase
 {

@@ -10,34 +10,34 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Providers;
+namespace bisual\JWTAuth\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Namshi\JOSE\JWS;
-use PHPOpenSourceSaver\JWTAuth\Blacklist;
-use PHPOpenSourceSaver\JWTAuth\Claims\Factory as ClaimFactory;
-use PHPOpenSourceSaver\JWTAuth\Console\JWTGenerateCertCommand;
-use PHPOpenSourceSaver\JWTAuth\Console\JWTGenerateSecretCommand;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Auth;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Storage;
-use PHPOpenSourceSaver\JWTAuth\Factory;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\Authenticate;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\AuthenticateAndRenew;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\Check;
-use PHPOpenSourceSaver\JWTAuth\Http\Middleware\RefreshToken;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\AuthHeaders;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\InputSource;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\Parser;
-use PHPOpenSourceSaver\JWTAuth\Http\Parser\QueryString;
-use PHPOpenSourceSaver\JWTAuth\JWT;
-use PHPOpenSourceSaver\JWTAuth\JWTAuth;
-use PHPOpenSourceSaver\JWTAuth\JWTGuard;
-use PHPOpenSourceSaver\JWTAuth\Manager;
-use PHPOpenSourceSaver\JWTAuth\Providers\JWT\Lcobucci;
-use PHPOpenSourceSaver\JWTAuth\Providers\JWT\Namshi;
-use PHPOpenSourceSaver\JWTAuth\Validators\PayloadValidator;
+use bisual\JWTAuth\Blacklist;
+use bisual\JWTAuth\Claims\Factory as ClaimFactory;
+use bisual\JWTAuth\Console\JWTGenerateCertCommand;
+use bisual\JWTAuth\Console\JWTGenerateSecretCommand;
+use bisual\JWTAuth\Contracts\Providers\Auth;
+use bisual\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use bisual\JWTAuth\Contracts\Providers\Storage;
+use bisual\JWTAuth\Factory;
+use bisual\JWTAuth\Http\Middleware\Authenticate;
+use bisual\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use bisual\JWTAuth\Http\Middleware\Check;
+use bisual\JWTAuth\Http\Middleware\RefreshToken;
+use bisual\JWTAuth\Http\Parser\AuthHeaders;
+use bisual\JWTAuth\Http\Parser\InputSource;
+use bisual\JWTAuth\Http\Parser\Parser;
+use bisual\JWTAuth\Http\Parser\QueryString;
+use bisual\JWTAuth\JWT;
+use bisual\JWTAuth\JWTAuth;
+use bisual\JWTAuth\JWTGuard;
+use bisual\JWTAuth\Manager;
+use bisual\JWTAuth\Providers\JWT\Lcobucci;
+use bisual\JWTAuth\Providers\JWT\Namshi;
+use bisual\JWTAuth\Validators\PayloadValidator;
 
 abstract class AbstractServiceProvider extends ServiceProvider
 {

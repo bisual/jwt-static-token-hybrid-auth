@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Validators;
+namespace bisual\JWTAuth\Validators;
 
-use PHPOpenSourceSaver\JWTAuth\Claims\Collection;
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Claims\Collection;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
 
 class PayloadValidator extends Validator
 {
@@ -58,7 +58,7 @@ class PayloadValidator extends Validator
      *
      * @return void
      *
-     * @throws \PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException
+     * @throws \bisual\JWTAuth\Exceptions\TokenInvalidException
      */
     protected function validateStructure(Collection $claims)
     {
@@ -72,8 +72,8 @@ class PayloadValidator extends Validator
      *
      * @return Collection
      *
-     * @throws \PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException
-     * @throws \PHPOpenSourceSaver\JWTAuth\Exceptions\TokenExpiredException
+     * @throws \bisual\JWTAuth\Exceptions\TokenInvalidException
+     * @throws \bisual\JWTAuth\Exceptions\TokenExpiredException
      */
     protected function validatePayload(Collection $claims)
     {
@@ -85,7 +85,7 @@ class PayloadValidator extends Validator
      *
      * @return Collection
      *
-     * @throws \PHPOpenSourceSaver\JWTAuth\Exceptions\TokenExpiredException
+     * @throws \bisual\JWTAuth\Exceptions\TokenExpiredException
      */
     protected function validateRefresh(Collection $claims)
     {

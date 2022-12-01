@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth;
+namespace bisual\JWTAuth;
 
-use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Storage;
-use PHPOpenSourceSaver\JWTAuth\Support\Utils;
+use bisual\JWTAuth\Contracts\Providers\Storage;
+use bisual\JWTAuth\Support\Utils;
 
 class Blacklist
 {

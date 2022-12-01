@@ -10,9 +10,9 @@
  * file that was distributed with this source code.
  */
 
-namespace PHPOpenSourceSaver\JWTAuth\Validators;
+namespace bisual\JWTAuth\Validators;
 
-use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenInvalidException;
+use bisual\JWTAuth\Exceptions\TokenInvalidException;
 
 class TokenValidator extends Validator
 {
