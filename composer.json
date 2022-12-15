@@ -74,7 +74,7 @@
         "sort-packages": true
     },
     "prefer-stable": true,
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "scripts": {
         "php-cs-fixer": "php-cs-fixer fix --diff",
         "test": "phpunit --colors=always",
